@@ -1,0 +1,12 @@
+# Vim
+*.swp
+*.swo
+
+# NPM/NodeJS
+node_modules
+
+# JetBrains
+.idea
+
+# Auth
+squirrel-scribe-firebase-adminsdk-ulx3a-cefe27b55a.json
