@@ -17,7 +17,7 @@ http://www.jsonml.org/
 
 ## Decompose Services
 
-Create
+Creat
 Retrieve
 Update
 
