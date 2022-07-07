@@ -5,51 +5,40 @@
 APPLICATION_CLIENT_ID: uuid.uuidv4()
 https://www.uuidgenerator.net/
 
-## Entity
+## ClientApplication
+    id: UUIDv4()
+    platform: 'Web_Client"
+    build: uuidv4() or git commit hash
+    version
+    build_quality
+    registration_timestamp
+
+## User
+    id
+    name
+    email
+    registration_timestamp 
+
+## DocumentEntity
     id
     create_on
     updated_on
-    type
-
-## ApplicationClient
-    $ref: Entity
-    name
-    build
-    version
-    build_quality
-
-## Application
-
-## ApplicationState
-    $ref: Entity
-
-## User
-    $ref: Entity 
-    name
-    email
-
-## Cursor
-    Is an Entity
-    Has a User: $ref: User
-
-## Document
-    $ref: Entity
-    title
-
-## DocumentEntity
-    $ref: Entity
+    entity_type
     parent
     children
+    history_id
+
+## Document
+    $ref: DocumentEntity
+    title
 
 ## Section
-    $ref: Entity
+    $ref: DocumentEntity 
     header
     content
 
 ## Item
-    $ref: Entity
+    $ref: DocumentEntity 
     header
     content
-
-## Cursor
 
