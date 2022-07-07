@@ -8,5 +8,5 @@
     "user": "uuid",
     "event_type": "uri-reference"
   },
-  "required": [ "id", "datetime", "event_type" ]
+  "required": [ "id", "datetime", "user", "event_type" ]
 }

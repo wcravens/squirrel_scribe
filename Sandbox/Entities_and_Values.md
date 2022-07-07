@@ -1,9 +1,6 @@
-# Entities and Values
+# Entities and Values from the Inside Out
 
-
-## Entity 
-
-## Environment (Build into WebPack)
+## Environment ( Built into WebPack for Node and Browser )
 
 APPLICATION_CLIENT_ID: uuid.uuidv4()
 https://www.uuidgenerator.net/
@@ -13,14 +10,15 @@ https://www.uuidgenerator.net/
     create_on
     updated_on
     type
-    parent
-    children
 
-## Application
+## ApplicationClient
     $ref: Entity
     name
-    build_version
+    build
+    version
     build_quality
+
+## Application
 
 ## ApplicationState
     $ref: Entity
@@ -30,9 +28,18 @@ https://www.uuidgenerator.net/
     name
     email
 
+## Cursor
+    Is an Entity
+    Has a User: $ref: User
+
 ## Document
     $ref: Entity
     title
+
+## DocumentEntity
+    $ref: Entity
+    parent
+    children
 
 ## Section
     $ref: Entity
@@ -43,4 +50,6 @@ https://www.uuidgenerator.net/
     $ref: Entity
     header
     content
+
+## Cursor
 
